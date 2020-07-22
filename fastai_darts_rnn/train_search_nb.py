@@ -77,6 +77,6 @@ print(learn.model.genotype_parse())
 
 
 learn.fit(50, 20, callbacks=[
-#     SaveModel(learn, gap = 1, name=model_name),
+    SaveModel(learn, gap = 1, name=model_name),
     SaveModelCallback(learn, name=model_name) # save on improvement
                            ])
